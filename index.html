@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora</h1>
+
+        <div class="controlPanel">
+
+            <input type="text" name="display" id="display" value="" readonly>
+
+            <div class="btns">
+                <!-- 1ª Linha de botões -->
+                <button class="delete" aria-label="Apagar Tudo" data-action="Delete">Del</button>
+                <button class="backspace" aria-label="Apagar Ultima Entrada" data-action="Backspace">&lArr;</button>
+                <button aria-label="Dividir" data-operator="/">/</button>
+                <button aria-label="Multiplicar" data-operator="*">&times;</button>
+                
+                <!-- 2ª Linha de botões -->
+                <button aria-label="Número 7" data-number="7">7</button>
+                <button aria-label="Número 8" data-number="8">8</button>
+                <button aria-label="Número 9" data-number="9">9</button>
+                <button aria-label="Adicionar" data-operator="+">+</button>
+                
+                <!-- 3ª Linha de botões -->
+                <button aria-label="Número 4" data-number="4">4</button>
+                <button aria-label="Número 5" data-number="5">5</button>
+                <button aria-label="Número 6" data-number="6">6</button>
+                <button aria-label="Subtrair" data-operator="-">-</button>
+
+                <!-- 4ª Linha de botões -->
+                <button aria-label="Número 1" data-number="1">1</button>
+                <button aria-label="Número 2" data-number="2">2</button>
+                <button aria-label="Número 3" data-number="3">3</button>
+                <button aria-label="Resto da Divisão" data-operator="%">%</button>
+                
+                <!-- 5ª Linha de botões -->
+                <button aria-label="Número 0" data-number="0">0</button>
+                <button aria-label="Ponto Decimal" data-number="." id="float">.</button>
+                <button aria-label="Duplo Zero" data-number="00">00</button>
+                <button aria-label="Calcular" data-action="Enter"> = </button>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <span class="copyrigth">&copy; LukanuC</span>
+    <script src="script.js"></script>
+    
+</body>
+</html>
